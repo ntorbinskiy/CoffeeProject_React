@@ -5,17 +5,24 @@
     justify-content: center
     justify-items: center
     padding-top: 60px
-
+    row-gap: 60px
+    @media screen and ( max-width: 767px  )
+        grid-template-columns: auto
+        row-gap: 60px
     &_item
         background: #FFFFFF
         border-radius: 8px
         box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25)
         margin-right: 70px
-        margin-bottom: 60px
         padding: 37px 27px 22px 26px
         text-align: center
         cursor: pointer
         transition: transform 500ms
+        @media screen and ( max-width:767px)
+            margin-right: 0
+            
+
+            
         &_country
             text-align: right
         &_cost

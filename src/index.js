@@ -11,15 +11,15 @@ import FourthPage from "./components/fourth-page/FourthPage";
 
 
 ReactDOM.render(
-<BrowserRouter>
-        <ScrollToTop/>
-      <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="firstpage" element={<FirstPage />} />
-        <Route path="secondpage" element={<SecondPage />} />
-        <Route path="thirdpage" element={<ThirdPage/>}/>
-        <Route path="fourthpage" element={<FourthPage/>}/>
-      </Routes>
-    </BrowserRouter>,
+  <BrowserRouter>
+    <ScrollToTop />
+    <Routes>
+      <Route path="/" element={<App />} />
+      <Route path="firstpage" element={<FirstPage />} />
+      <Route path="secondpage" element={<SecondPage />} />
+      <Route path="thirdpage" element={<ThirdPage />} />
+      <Route path="fourthpage" element={<FourthPage />} />
+    </Routes>
+  </BrowserRouter>,
   document.getElementById("root")
 );

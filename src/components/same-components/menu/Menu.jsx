@@ -4,7 +4,7 @@ import logoBlack from "../../../resources/img/logo/logoBlack2.png";
 import { Link } from "react-router-dom";
 import "./Menu.sass";
 
-const Menu = ({ color, align, padding}) => {
+const Menu = ({ color, align}) => {
 	let className = "Menu_link_item";
 	let className2 = "Menu_link_item Menu_link_item_logo";
 	let className3 = "Menu_link";
@@ -16,7 +16,10 @@ const Menu = ({ color, align, padding}) => {
 		className3 += " flex";
 	}
 	return (
-		<div className="Menu" style={padding}>
+		<div className="Menu" >
+			<div className="Menu_burger">
+				<span className="Menu_burger_span"></span>
+			</div>
 			<div className={className3}>
 				<Link to="/">
 					<img

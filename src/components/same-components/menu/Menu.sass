@@ -1,18 +1,30 @@
 .Menu
     padding-left: 155px
     padding-top: 30px
+    @media screen and ( max-width:767px  )
+        padding-left: 0
+
     &_link
+        display: flex
+        gap: 40px
         &_item
-            margin-right: 40px
             font-weight: 400
             color: #ffff
             text-decoration: none
             &_logo
                 margin-right: 0
+    
+
 .black
     color: black
 .center
     margin-left: 40px
-.flex 
+.flex
     display: flex
-    justify-content: center    
+    justify-content: center
+.Menu_link_item
+    @media screen and ( max-width: 767px  )
+        color: white
+        &_logo
+            @media screen and ( max-width: 767px  )
+                z-index: 3

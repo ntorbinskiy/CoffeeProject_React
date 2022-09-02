@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <>
       <footer className="footer">
-        <Menu color="black" align="center" padding={{"paddingLeft" : "0"}}/>
+        <Menu color="black" align="center"/>
         <Logo edition="black" style={{"marginTop": "30px", "marginBottom" : "20px"}}/>
       </footer>
     </>

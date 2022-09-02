@@ -4,7 +4,10 @@
     justify-items: end
     padding-bottom: 64px
     padding-top: 70px
-
+    @media screen and ( max-width:767px  )
+        grid-template-columns: auto
+        justify-items: center
+        padding-bottom: 44px
     &::after
         content: ""
         width: 240px
@@ -23,10 +26,16 @@
         font-size: 14px
         width: 36%
         text-align: center
+        @media screen and ( max-width:767px  )
+            margin-top: 15px
+            font-size: 16px
+            width: 80%
     &_div
         margin-top: 11px
         display: flex
         flex-direction: column
-        align-items: center
+        align-items: flex-start
+        @media screen and ( max-width:767px  )
+            align-items: center
     &_img
         filter: drop-shadow(5px 5px 30px rgba(0, 0, 0, 0.25))

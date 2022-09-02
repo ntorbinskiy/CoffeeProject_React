@@ -15,14 +15,13 @@ const firstPage = () => {
 					<div className="container ">
 						<Menu
 							color="white"
-							padding={{ "paddingLeft": "155px" }}
 						/>
 						<div className="header_Middle">
 							<div className="header_Middle_Evr">Everything You Love About Coffee</div>
 							<Logo edition="white" />
 							<div className="header_Make header_Make_try">We make every day full of energy and taste</div>
 							<div className="header_Make ">Want to try our beans?</div>
-							<button className="header_Make_btn">More</button>
+							<button className="header_Make_btn" type="button">More</button>
 						</div>
 					</div>
 				</section>

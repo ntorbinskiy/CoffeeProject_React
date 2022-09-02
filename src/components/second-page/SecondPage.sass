@@ -1,10 +1,14 @@
-
-
 .Market
 	&_SearchAndFilter
 		display: grid
 		grid-template-columns: auto auto
-		grid-template-rows: auto auto
+		@media screen and ( max-width: 767px  )
+			grid-template-columns: auto
+			grid-template-rows: auto auto
+			row-gap: 10px
+			padding: 9px
+			justify-items: center
+
 		&_Search
 			display: flex
 			align-items: center
@@ -23,6 +27,10 @@
 			&_orFilter
 				font-size: 14px
 				margin-right: 35px
+				@media screen and ( max-width: 767px  )
+					font-size: 15px
+					margin-right: 20px
+
 			&_buttons
 				display: flex
 				&_item

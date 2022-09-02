@@ -1,7 +1,7 @@
 import React from "react";
 import Label from "../label/Label";
 import "./Mid.sass";
-const Mid = ({ img, div, text }) => {
+const Mid = ({ img, div, text}) => {
 	return (
 		<section className="AboutUs">
 			<img
@@ -10,7 +10,7 @@ const Mid = ({ img, div, text }) => {
 				className="AboutUs_img"
 			/>
 			<div className="AboutUs_div">
-				<Label text={text} />
+				<Label text={text}  />
 				{div}
 			</div>
 		</section>

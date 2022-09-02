@@ -1,12 +1,11 @@
 import React from "react";
 import Logo from "../logo/Logo";
 import "./Label.sass";
-const Label = ({ text }) => {
+const Label = ({ text,style}) => {
 	return (
-		<div className="styles">
+		<div className="label" style={style}>
 			<h2
-				className="AboutUs_AboutOurBeans"
-				style={{ fontSize: "24px" }}>
+				className="AboutUs_AboutOurBeans">
 				{text}
 			</h2>
 			<Logo edition="black" style2={{"marginTop" : "20px"}} />

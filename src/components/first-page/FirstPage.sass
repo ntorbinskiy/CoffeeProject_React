@@ -2,7 +2,6 @@
     background: url("../../resources/img/main/bgmain.png") no-repeat center center fixed
     background-size: cover
     padding-bottom: 201px
-
     &_Middle
         &_Evr
             font-weight: 700
@@ -13,6 +12,8 @@
             text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
             display: flex
             justify-content: center
+            @media ( max-width: 767px )
+                font-size: 25px
     &_Make
         font-weight: 700
         font-size: 24px
@@ -53,11 +54,17 @@
         display: flex
         justify-content: space-evenly
         padding: 39px 0 108px 0
+        @media  ( max-width: 767px )
+        flex-direction: column
+        align-items: center
         &_item
             padding: 20px
             background: rgba(255, 255, 255, 0.65)
             border-radius: 8px
             cursor: pointer
+            @media  ( max-width: 767px )
+            margin-top: 35px
+            
             &_img
                 display: block
                 margin: 0 auto
@@ -68,3 +75,5 @@
             &_cost
                 text-align: right
                 margin-top: 10px
+
+
