@@ -6,7 +6,7 @@ import "./Menu.sass";
 
 const Menu = ({ color, align}) => {
 	let className = "Menu_link_item";
-	let className2 = "Menu_link_item Menu_link_item_logo";
+	let className2 = "Menu";
 	let className3 = "Menu_link";
 	if (color === "black") {
 		className += " black";
@@ -16,7 +16,7 @@ const Menu = ({ color, align}) => {
 		className3 += " flex";
 	}
 	return (
-		<div className="Menu" >
+		<div className= {className2}>
 			<div className="Menu_burger">
 				<span className="Menu_burger_span"></span>
 			</div>
@@ -25,7 +25,7 @@ const Menu = ({ color, align}) => {
 					<img
 						src={color === "black" ? logoBlack : logoWhite}
 						alt="#"
-						className={className2}
+						className={"Menu_link_item Menu_link_item_logo"}
 					/>
 				</Link>
 				<Link
