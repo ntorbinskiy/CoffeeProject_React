@@ -1,73 +1,30 @@
-import React from 'react';
-import img2 from "../../../resources/img/second/lookfor.png";
+/* eslint-disable default-case */
+import { React, useState } from "react";
+import CardsItem from "./cards-item/CardsItem";
+import nextId from "react-id-generator";
 import "./Cards.sass";
-const Cards = () => {
-    return (
-        <>
-         <section className="Cards">
-				<div className="Cards_item">
-					<img
-						src={img2}
-						alt=""
-						className="Cards_item_img"
-					/>
-					<div className="Cards_item_title">AROMISTICO Coffee 1 kg</div>
-					<div className="Cards_item_country">Brazil</div>
-					<div className="Cards_item_cost">6.99$</div>
-				</div>
-				<div className="Cards_item">
-					<img
-						src={img2}
-						alt=""
-						className="Cards_item_img"
-					/>
-					<div className="Cards_item_title">AROMISTICO Coffee 1 kg</div>
-					<div className="Cards_item_country">Kenya</div>
-					<div className="Cards_item_cost">6.99$</div>
-				</div>
-				<div className="Cards_item">
-					<img
-						src={img2}
-						alt=""
-						className="Cards_item_img"
-					/>
-					<div className="Cards_item_title">AROMISTICO Coffee 1 kg</div>
-					<div className="Cards_item_country">Columbia</div>
-					<div className="Cards_item_cost">6.99$</div>
-				</div>
-				<div className="Cards_item">
-					<img
-						src={img2}
-						alt=""
-						className="Cards_item_img"
-					/>
-					<div className="Cards_item_title">AROMISTICO Coffee 1 kg</div>
-					<div className="Cards_item_country">Brazil</div>
-					<div className="Cards_item_cost">6.99$</div>
-				</div>
-				<div className="Cards_item">
-					<img
-						src={img2}
-						alt=""
-						className="Cards_item_img"
-					/>
-					<div className="Cards_item_title">AROMISTICO Coffee 1 kg</div>
-					<div className="Cards_item_country">Brazil</div>
-					<div className="Cards_item_cost">6.99$</div>
-				</div>
-				<div className="Cards_item">
-					<img
-						src={img2}
-						alt=""
-						className="Cards_item_img"
-					/>
-					<div className="Cards_item_title">AROMISTICO Coffee 1 kg</div>
-					<div className="Cards_item_country">Brazil</div>
-					<div className="Cards_item_cost">6.99$</div>
-				</div>
-			</section>   
-        </>
-    );
+
+const Cards = ({ visData }) => {
+	const newArr = [];
+	let id;
+	console.log(visData);
+	for (let i = 0; i < visData.length; i++) {
+		id = nextId();
+		newArr.push(
+			<CardsItem
+				key={id}
+				title={visData[i].title}
+				country={visData[i].country}
+				cost={visData[i].cost}
+			/>
+		);
+	}
+
+	return (
+		<>
+			<section className="Cards">{newArr}</section>
+		</>
+	);
 };
 
 export default Cards;
