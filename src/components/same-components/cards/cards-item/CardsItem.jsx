@@ -1,5 +1,4 @@
-import { useCallback, useEffect } from "react";
-import { React, useState } from "react";
+import { React } from "react";
 import img2 from "../../../../resources/img/second/lookfor.png";
 import "./CardsItem.sass";
 const countries = {
