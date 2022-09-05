@@ -7,6 +7,10 @@ import "./Cards.sass";
 const Cards = ({ visData }) => {
 	const newArr = [];
 	let id;
+	if (visData.length===0) {
+		console.log("pizda");
+		return <div style={{"textAlign" : "center","fontSize" : "20px"}}>No  goods!</div>;
+	}
 	console.log(visData);
 	for (let i = 0; i < visData.length; i++) {
 		id = nextId();
